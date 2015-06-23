@@ -17,6 +17,10 @@
 		}
 
 		React.render(<HelloWorldComponent name="Walberto" />,  document.getElementById("container"));
+
+		setTimeout(()=>{
+			React.render(<HelloWorldComponent name="Wal" />,  document.getElementById("container"));
+		},5000);
 	</script>
 </body>
 </html>
