@@ -46,7 +46,7 @@
 				return <ul className="poketable">
 					{
 						this.props.pokemons.map((pokemon) => {
-							return <PokeRow name={pokemon.name} number={pokemon.number} />
+							return <PokeRow key={pokemon.number} name={pokemon.name} number={pokemon.number} />
 						})
 					}
 				</ul>
